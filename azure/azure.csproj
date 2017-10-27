@@ -160,6 +160,11 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Dockerfile" />
+    <None Include=".dockerignore">
+      <DependentUpon>Dockerfile</DependentUpon>
+    </None>
+    <None Include="Properties\PublishProfiles\azure20171027024046-dev - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\azure20171027024046-prod - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\azure20171027024046-stage - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
